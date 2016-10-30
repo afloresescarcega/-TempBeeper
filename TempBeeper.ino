@@ -117,13 +117,13 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  printDistance();
-  printTemp();
+//  printDistance();
+//  printTemp();
 //  Serial.print("this is the temp: "); 
 //  Serial.print(getCelsius(returnTc_100()));
 //  Serial.print("\n");
   int distance = getDistanceInCM();
-  if( distance > 30 && distance < 60 && getCelsius(returnTc_100()) > 25){
+  if( distance > 30 && distance < 60 && getCelsius(returnTc_100()) > 28){
     Serial.println("Yes");
     makeSiren();
   }
